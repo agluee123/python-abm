@@ -1,6 +1,6 @@
-from agregar_cliente import alta_cliente
-from eliminar_cliente import eliminar
-from mostrar_cliente import listar_cliente
+from funciones import alta_cliente
+from funciones import eliminar
+from funciones import listar_cliente
 
 
 while True:
