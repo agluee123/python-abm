@@ -1,6 +1,9 @@
 from funciones import alta_cliente
 from funciones import eliminar
 from funciones import listar_cliente
+from funciones import mostrar_nombre_dni
+from funciones import mostrar_preferente_nombre_dni
+from funciones import listar_pedros 
 
 
 while True:
@@ -21,7 +24,14 @@ while True:
     elif opcion=='2':
         eliminar()
     elif opcion=='3':
-        listar_cliente()    
+        listar_cliente()
+    elif opcion=='4':
+        mostrar_nombre_dni()
+    elif opcion=='5':
+        mostrar_preferente_nombre_dni()
+    elif opcion=='6':
+        listar_pedros()    
+
             
         
         

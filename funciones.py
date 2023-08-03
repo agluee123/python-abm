@@ -28,7 +28,6 @@ def alta_cliente():
     df.to_csv(nombre_archivo, index=False)
 
 
-
 def listar_cliente():
         
         nombre_archivo='datos_clientes.csv'
@@ -57,3 +56,24 @@ def eliminar():
     df = df[df['nombre'] != nombre_eliminar]
 
     df.to_csv(nombre_archivo, index=False)
+
+
+def mostrar_nombre_dni():
+        nombre_archivo='datos_clientes.csv'
+        df= pd.read_csv(nombre_archivo)
+        print(df[['nombre','dni']])
+        
+        
+def mostrar_preferente_nombre_dni():
+        nombre_archivo='datos_clientes.csv'
+        df=pd.read_csv(nombre_archivo)
+        clientes_prefentes=df[df['preferente']=='si']
+        print(clientes_prefentes[['nombre','dni']])        
+        
+        
+def listar_pedros():
+        nombre_archivo='datos_clientes.csv'
+        df=pd.read_csv=(nombre_archivo)
+        nombre=df[df['nombre'].str.lower()=='Pedro']
+        nombre.reset_index(drop=True,inplace=True)
+        print(nombre[['nombre','dni']])
