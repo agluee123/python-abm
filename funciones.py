@@ -11,8 +11,8 @@ def alta_cliente():
     nombre = str(input("Ingrese el NOMBRE del nuevo cliente: "))
     edad = int(input("Ingrese la EDAD del nuevo cliente: "))
     direccion = str(input("Ingrese la DIRECCION del nuevo cliente: "))
-    telefono = input("Ingrese su número de TELEFONO: ")
-    email = input("Ingrese su EMAIL: ")
+    telefono = int(input("Ingrese su número de TELEFONO: "))
+    email = str(input("Ingrese su EMAIL: "))
     preferente = str(input("Ingrese si es un cliente preferente, escribir SI O NO: "))
 
     #se crea el nuevo registro en forma de diccionario con los nombres de las columnas del dataframe
