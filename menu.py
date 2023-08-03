@@ -21,17 +21,13 @@ while True:
 
     if opcion == '1':
         alta_cliente()
-    elif opcion=='2':
+    elif opcion == '2':
         eliminar()
-    elif opcion=='3':
+    elif opcion == '3':
         listar_cliente()
-    elif opcion=='4':
+    elif opcion == '4':
         mostrar_nombre_dni()
-    elif opcion=='5':
+    elif opcion == '5':
         mostrar_preferente_nombre_dni()
-    elif opcion=='6':
-        filtrar_pedros()    
-
-            
-        
-        
+    elif opcion == '6':
+        filtrar_pedros()
