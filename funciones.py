@@ -70,10 +70,14 @@ def mostrar_preferente_nombre_dni():
         clientes_prefentes=df[df['preferente']=='si']
         print(clientes_prefentes[['nombre','dni']])        
         
-        
-def listar_pedros():
+
+def filtrar_pedros():
         nombre_archivo='datos_clientes.csv'
-        df=pd.read_csv=(nombre_archivo)
-        nombre=df[df['nombre'].str.lower()=='Pedro']
-        nombre.reset_index(drop=True,inplace=True)
-        print(nombre[['nombre','dni']])
+        df=pd.read_csv(nombre_archivo)
+        personas_pedro = df[df['nombre'].str.lower().str.contains('pedro')]
+        print(personas_pedro)
+
+
+
+
+

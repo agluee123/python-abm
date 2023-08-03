@@ -3,7 +3,7 @@ from funciones import eliminar
 from funciones import listar_cliente
 from funciones import mostrar_nombre_dni
 from funciones import mostrar_preferente_nombre_dni
-from funciones import listar_pedros 
+from funciones import filtrar_pedros
 
 
 while True:
@@ -30,7 +30,7 @@ while True:
     elif opcion=='5':
         mostrar_preferente_nombre_dni()
     elif opcion=='6':
-        listar_pedros()    
+        filtrar_pedros()    
 
             
         
