@@ -4,7 +4,8 @@ from funciones import listar_cliente
 from funciones import mostrar_nombre_dni
 from funciones import mostrar_preferente_nombre_dni
 from funciones import filtrar_pedros
-
+from funciones import calcular_promedio
+from funciones import terminar
 
 while True:
     print("\nMENU:")
@@ -31,3 +32,10 @@ while True:
         mostrar_preferente_nombre_dni()
     elif opcion == '6':
         filtrar_pedros()
+    elif opcion == '7':
+        calcular_promedio()
+    elif opcion == '8':
+        terminar()
+
+    else:
+        print("Opción no válida. Por favor, seleccione una opción del 1 al 8.")
